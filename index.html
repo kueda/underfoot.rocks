@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Underfoot</title>
@@ -11,18 +10,68 @@
       font-family: sans-serif;
       line-height: 1.8;
     }
+    #screenshots {
+      display: flex;
+    }
+    @media only screen and (max-width: 600px) {
+      #screenshots {
+        flex-wrap: wrap;
+      }
+    }
+    #screenshots img {
+      max-width: 100%;
+    }
   </style>
   <body>
     <div style="display: flex; justify-content: center; width: 100%; height: 100%">
       <div style="padding: 5% 10%">
         <p>
-          <a href="https://github.com/kueda/underfoot"><strong>Underfoot</strong></a> will be an app for exploring geologic, hydrologic, and pedologic (that's soil) maps. It is a side project <a href="http://github.com/kueda">I</a> work on sometimes and may never actually be available to download, but if it is, I will definitely want this domain. I know a lot of stuff about living things, but I know next to nothing about everything else, so, you know, clearly software is the answer.
+          <a href="https://github.com/kueda/underfoot"><strong>Underfoot</strong></a> will be an app for exploring geologic, hydrologic, and pedologic (that's soil) maps. It is a hobby project <a href="http://github.com/kueda">I</a> work on sometimes and it may never actually be finished, or even stable. It almost certainly won't be in the App Store or the Play Store because who needs the hassle.
         </p>
+        <h1>Take a Look</h1>
+        <div id="screenshots">
+          <figure>
+            <a href="images/underfoot-screenshot-mount-diablo.jpeg"><img src="images/underfoot-screenshot-mount-diablo.jpeg" alt="Screenshot showing geology of Mount Diablo" /></a>
+            <figcaption>Geology of my favorite place, Mount Diablo, Contra Costa County, CA, USA</figcaption>
+          </figure>
+          <figure>
+            <a href="images/underfoot-screenshot-twin-peaks.jpeg"><img src="images/underfoot-screenshot-twin-peaks.jpeg" alt="Screenshot showing geology of Twin Peaks in San Francisco" /></a>
+            <figcaption>Close-up of Twin Peaks in San Francisco, CA, USA, showing streets and topo lines</figcaption>
+          </figure>
+          <figure>
+            <a href="images/underfoot-screenshot-san-leandro-creek.jpeg"><img src="images/underfoot-screenshot-san-leandro-creek.jpeg" alt="Screenshot the path of a creek in the East Bay region of California" /></a>
+            <figcaption>Hydrology, showing part of San Leandro Creek (Alameda County, CA, USA) flowing to the coast</figcaption>
+          </figure>
+        </div>
+        <h1>Try it Out</h1>
         <p>
-          I can see how that would be unsatisfying, so here's a nice picture of some rocks I saw once.
+          Have an Android device? Do you trust me? Ok with the possibility that the app might crash and/or stop working at any time? Then you can try it out:
         </p>
+        <ol>
+          <li><p><a rel="nofollow" href="https://github.com/kueda/UnderfootAndroid/releases/latest/download/Underfoot.apk">Download the latest APK</a></p></li>
+          <li><p>Open the APK and install</p></li>
+          <li><p>If you use Google stuff, Google may say the app is "Blocked by Play Protect." Choose to "INSTALL ANYWAY" (again, only if you trust me)</p></li>
+          <li><p>When the app opens you should be prompted to choose a download. Find one that looks good to you, download it, and check the mark to the left of it.</p></li>
+          <li><p>Navigate to "Rocks" or "Water." If might crash, but it should work when you open again (like I said, hobby project)</p></li>
+          <li><p>You'll probably need to pan the map or use the current location button to find the data (ok, legitimately embarassed by this part)</p></li>
+        </ol>
+
+        <h1>But How?</h1>
+        <p>The <a href="https://github.com/kueda/UnderfootAndroid">app</a> and the <a href="https://github.com/kueda/underfoot">data tooling</a> are open source, so feel free to take a look. Not pretty but it sort of works.</p>
+        <p>The data is almost entirely free and open, the bulk of it paid for by tax-payers in the United States (like me) and prepared by superheroic experts at the USGS. Here's a short list:</p>
+
+        <ul>
+          <li><p><a href="https://ngmdb.usgs.gov/ngmdb/ngmdb_home.html">USGS geologic maps</a>. Amazing stuff. Please digitize more, USGS!</p></li>
+          <li><p><a href="https://www.usgs.gov/national-hydrography/nhdplus-high-resolution">NHDPlus HR</a>. That's National Hydrography Dataset, also from USGS.</p></li>
+          <li><p><a href="https://www.openstreetmap.org">OpenStreetMap</a> data hosted at <a href="https://download.geofabrik.de/">GEOFABRIK</a>. This is where all the streets, peaks, ridges, and springs come from. Best thing on the Internet after Wikipedia.</p></li>
+          <li><p><a href="https://registry.opendata.aws/terrain-tiles/">Mapzen Terrain Tiles</a>, hosted by the <a href="https://aws.amazon.com/opendata/open-data-sponsorship-program/">Amazon Open Data Sponsorship Program</a>. Using this for the contour lines.</p></li>
+          <li><p><a href="https://www.nextzen.org/">Nextzen Terrain Tiles</a>. Currently using it for the hillshades, online-only.</p></li>
+        </ul>
+
+        <h1>Too Boring? Too Many Steps? Who Is This Weirdo?</h1>
+        <p>Understandable. Here's a pic of some rocks I took instead:</p>
         <p>
-          <a data-flickr-embed="true" href="https://www.flickr.com/photos/ken-ichi/9720349303/in/photolist-fNXkcn-k67Zds-pfoJrn-dQ1LjS-F2pA2-bUucHa-4Pykii-6WchDe-bkcecn-dRM95V-5mDbBS-2yBcGe-5myVRz-776ES6-2cEENHV-2iLsH8M-4PyjXc-5rsfHc-6cCsf2-hnNFk-hqts6-6uk76c-6L116K-6uphFN-6uk67v-6uk6H8-m3o8u-5vh6Hr-4bYd2Y-4W5HkP-eF7Vw9-rRf6zo-4Yi3K8-4bYgGN-5o3FiQ-fgeVtK-6FyTm8-4fPH2c-21pZngn-ZjWytQ-28y5TRh-6AmZsw-76Q8FJ-gWWMC-gWWLj-gWWPz-4QXumk-74QEfu-7HJiq5-DJjizh" title="Iceberg Lake"><img src="https://live.staticflickr.com/7343/9720349303_e86b634311_b.jpg" style="width: 100%" alt="Iceberg Lake"></a>
+          <a href="https://www.flickr.com/photos/ken-ichi/9720349303/" title="Iceberg Lake"><img src="https://live.staticflickr.com/7343/9720349303_e86b634311_b.jpg" style="width: 100%" alt="Iceberg Lake, with boulders before a high rocky ridge"></a>
         </p>
       </div>
     </div>
